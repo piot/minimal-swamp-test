@@ -1,3 +1,6 @@
+import AnotherFile
+
+
 type alias Vector2 =
     { x : Int
     , y : Int
@@ -27,7 +30,7 @@ worldToTilePosition tilemapSize worldPosition =
 
 changeInt : Int -> Int
 changeInt a =
-    a + 1
+    AnotherFile.thisDoesSomething (a + 1)
 
 
 changeTiles : Vector2 -> List Int

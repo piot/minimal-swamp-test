@@ -1,0 +1,3 @@
+thisDoesSomething : Int -> Int
+thisDoesSomething variable =
+    variable * 3
