@@ -32,4 +32,7 @@ changeInt a =
 
 changeTiles : Vector2 -> List Int
 changeTiles ignore =
+    let
+        someVariable = constant
+    in
     List.map changeInt [ 2, 3, 4 ]
