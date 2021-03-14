@@ -33,8 +33,8 @@ changeInt a =
     AnotherFile.thisDoesSomething (a + 1)
 
 
-changeTiles : Vector2 -> List Int
-changeTiles ignore =
+changeTiles : OssianTile -> List Int
+changeTiles ossianTile =
     let
         someVariable = constant
     in
