@@ -18,6 +18,12 @@ type alias OssianTile =
     }
 
 
+type Action =
+    DoNothing
+    | Dash Vector2
+    | FireRocket
+
+
 constant : String
 constant =
     "Hello World"
@@ -39,3 +45,11 @@ changeTiles ossianTile =
         someVariable = constant
     in
     List.map changeInt [ 2, 3, 4 ]
+
+
+doSomething : Action -> Vector2
+doSomething action =
+    case action of
+        FireRocket -> Vector2 1 23
+
+        _ -> Vector2 0 0
