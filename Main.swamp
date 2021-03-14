@@ -1,0 +1,35 @@
+type alias Vector2 =
+    { x : Int
+    , y : Int
+    }
+
+
+type alias Size2 =
+    { height : Int
+    , width : Int
+    }
+
+
+type alias OssianTile =
+    { position : Vector2
+    }
+
+
+constant : String
+constant =
+    "Hello World"
+
+
+worldToTilePosition : Size2 -> Vector2 -> Vector2
+worldToTilePosition tilemapSize worldPosition =
+    Vector2 (worldPosition.x / 16) ((tilemapSize.height - ( worldPosition.y / 16 ) - 1))
+
+
+changeInt : Int -> Int
+changeInt a =
+    a + 1
+
+
+changeTiles : Vector2 -> List Int
+changeTiles ignore =
+    List.map changeInt [ 2, 3, 4 ]
